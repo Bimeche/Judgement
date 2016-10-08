@@ -18,7 +18,7 @@ public class Porte : InteractiveObject {
 	
 	}
 
-    public override void interact()
+    public override void Interact()
     {
         // Tp le joueur à l'interieur d'un batiment
     }

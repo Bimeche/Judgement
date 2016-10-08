@@ -23,16 +23,20 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
+			//Changer sprite
             transform.Translate(Vector2.up * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.Translate(Vector2.down * speed * Time.deltaTime);
+		{
+			//Changer sprite
+			transform.Translate(Vector2.down * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Translate(Vector2.left * speed * Time.deltaTime);
+		{
+			//Changer sprite
+			transform.Translate(Vector2.left * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
+		{
+			//Changer sprite
+			transform.Translate(Vector2.right * speed * Time.deltaTime);
         }
     }
 
@@ -60,7 +64,7 @@ public class PlayerController : MonoBehaviour
             if (dot >= 0)
             {
                 Debug.Log("OOOOOUUUUUUAAAAAAIIIIIISSSSSS");
-                //close.gameObject.GetComponent<InteractiveObject>.Interact();
+                close.gameObject.GetComponent<InteractiveObject>().Interact();
             }
         }
     }

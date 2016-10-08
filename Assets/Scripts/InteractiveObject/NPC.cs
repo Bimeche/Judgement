@@ -40,7 +40,7 @@ public class NPC : InteractiveObject {
 	    
 	}
 
-    public override void interact()
+    public override void Interact()
     {
         // dialogue
 

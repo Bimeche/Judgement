@@ -5,9 +5,7 @@ using System;
 public class Hideout : InteractiveObject {
 
     public NPC m_hideNPC;
-    //public TextBoxManager textbox;
-
-//     public TextBoxManager m_textBoxManager;
+    public TextBoxManager textbox;
 
     // Use this for initialization
     public void Start()
@@ -29,7 +27,7 @@ public class Hideout : InteractiveObject {
         }
 	}
 
-    public override void interact()
+    public override void Interact()
     {
         // Message, NPC trouvé
         if (m_hideNPC != null)
@@ -37,11 +35,11 @@ public class Hideout : InteractiveObject {
             m_hideNPC.SetReveal(true);
         } else {
             string[] array = { "Il n'y a personne ici." };
-            //textbox.importDialog(array);
+            textbox.ImportDialog(array);
         }
     }
 
-    public void setHideNPC(NPC npc)
+    public void SetHideNPC(NPC npc)
     {
         m_hideNPC = npc;
         m_hideNPC.SetReveal(false);
