@@ -44,6 +44,12 @@ TagManager:
   - name: Background
     uniqueID: 3795118583
     locked: 0
+  - name: NPCLayer
+    uniqueID: 1901922619
+    locked: 0
   - name: PlayerLayer
     uniqueID: 2521224747
+    locked: 0
+  - name: BoxLayer
+    uniqueID: 3634761857
     locked: 0
