@@ -4,14 +4,18 @@ using System;
 
 public class NPC : InteractiveObject {
 
-    //     public TextBoxManager m_textBoxManager;
+    public TextBoxManager m_textBox;
     public string[] dialogs;
     public bool reveal;
+	public int okay;
+	public TextAsset text;
+
     // Use this for initialization
     public void Start()
     {
-        throw new NotImplementedException();
-        // Set a personality
+		okay = 0;
+		if (text != null)
+			dialogs = (text.text.Split('\n'));
     }
 
     void SetNPC(string[] dials, bool rev)
@@ -37,7 +41,14 @@ public class NPC : InteractiveObject {
 
     // Update is called once per frame
     public void Update () {
-	    
+		if (okay == 1)
+		{
+			if (Input.GetKeyDown(KeyCode.Space))
+			{
+				m_textBox.ImportDialog(dialogs);
+				okay = 2;
+			}
+		}
 	}
 
     public override void Interact()
@@ -46,4 +57,10 @@ public class NPC : InteractiveObject {
 
         throw new NotImplementedException();
     }
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(okay !=2)
+			okay = 1;
+	}
 }

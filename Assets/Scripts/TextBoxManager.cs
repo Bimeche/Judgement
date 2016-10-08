@@ -4,15 +4,17 @@ using UnityEngine.UI;
 
 public class TextBoxManager : MonoBehaviour {
 
-	private string[] textLines = {"Je suis la","J'ai peur"};
+	private string[] textLines;
 	public GameObject textBox;
 	public Text theText;
 
+	public bool playerCame;
 	public int currentLine;
 	public int endAtLine;
 
 	public bool active;
 	public bool stopMoving;
+	public bool var;
 
 	public PlayerController player;
 	// Use this for initialization
@@ -22,10 +24,12 @@ public class TextBoxManager : MonoBehaviour {
 	
 		player = FindObjectOfType<PlayerController> ();
 
-		if (endAtLine == 0) 
+		/*if (endAtLine == 0) 
 		{
 			endAtLine = textLines.Length - 1;
-		}
+		}*/
+		playerCame = false;
+		var = true;
 
 		if (active) {
 			stopMoving = true;
@@ -37,13 +41,12 @@ public class TextBoxManager : MonoBehaviour {
 
 	public void ImportDialog(string[] dial)
 	{
-		for (int i = 0; i < dial.Length; i++)
-			textLines [i] = dial [i];
+		textLines = dial;
 		
-		//if (endAtLine == 0) 
-		//{
-		//	endAtLine = textLines.Length - 1;
-		//}
+		if (endAtLine == 0) 
+		{
+			endAtLine = textLines.Length - 1;
+		}
 
 		enableBox ();
 		
@@ -56,9 +59,12 @@ public class TextBoxManager : MonoBehaviour {
 		{
 			return;
 		}
+		Debug.Log(textLines.Length);
 		theText.text = textLines [currentLine];
-
-		if (Input.GetKeyDown (KeyCode.Space)) 
+		if(currentLine == 0 && var)
+		{
+			var = false;
+		}else if (Input.GetKeyDown (KeyCode.Space) && !var) 
 		{
 			currentLine++;
 		}
@@ -74,17 +80,22 @@ public class TextBoxManager : MonoBehaviour {
 	{
 		textBox.SetActive (true);
 		active = true;
+		playerCame = true;
 
-		if (stopMoving) {
+		//if (stopMoving) {
 			player.canMove = false;
-		}
+		//}
 	}
 
 	public void disableBox()
 	{
 		textBox.SetActive (false);
 		active = false;
-		Destroy (textBox);
+		Debug.Log("hfeuerverfhkerjbfhjbfhkvberhjkfbeskjhfbskjhfbkjhdsrvbfhkjdrs bfhkjersbvfhkjversbfjhkbsdkrjgfvbshkjebfhkjebfrkuebfrhkjverbkuyhb");
+		currentLine = 0;
+		var = true;
+		//if(playerCame)
+			//Destroy (textBox);
 
 		stopMoving = false;
 		player.canMove = true;

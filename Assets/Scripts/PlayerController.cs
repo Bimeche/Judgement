@@ -27,7 +27,9 @@ public class PlayerController : MonoBehaviour
         }
         Movement();
         NoRotate();
-        Interact();
+		//if (Input.GetKey(KeyCode.Space){
+		//	Interact();
+		//}
     }
 
     void Movement()
@@ -59,24 +61,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    Collider2D CheckIfCloseEnough()
-    {
-        return Physics2D.OverlapCircle(pos, radius);
-    }
-
-    void Interact()
-    {
-        pos = transform.position;
-        Debug.Log(pos);
-        Collider2D close = CheckIfCloseEnough();
-        if (Input.GetKey(KeyCode.Space) && close != null)
-        {
-            float dot = close.transform.position.x * transform.forward.x + close.transform.position.y * transform.forward.y;
-            if (dot >= 0)
-            {
-                Debug.Log("OOOOOUUUUUUAAAAAAIIIIIISSSSSS");
-                close.gameObject.GetComponent<InteractiveObject>().Interact();
-            }
-        }
-    }
+   // void Interact()
+   // {
+   //     pos = transform.position;
+   //     Debug.Log(pos);
+   //     Collider2D[] close = CheckIfCloseEnough();
+   //     if (close != null)
+   //     {
+			//int i = 0;
+			//string tagOfClose;
+			//while(i<close.Length && )
+			//{
+				
+			//}
+   //         //float dot = close.transform.position.x * transform.forward.x + close.transform.position.y * transform.forward.y;
+   //         //if (dot >= 0)
+   //         //{
+   //             Debug.Log("OOOOOUUUUUUAAAAAAIIIIIISSSSSS");
+   //             close.gameObject.GetComponent<InteractiveObject>().Interact();
+   //         //}
+   //     }
+   // }
 }
