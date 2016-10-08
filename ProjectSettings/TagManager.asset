@@ -41,6 +41,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
   - name: Background
     uniqueID: 3795118583
     locked: 0
@@ -53,3 +54,5 @@ TagManager:
   - name: BoxLayer
     uniqueID: 3634761857
     locked: 0
+=======
+>>>>>>> parent of c1721ad... Commit scene
