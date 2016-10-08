@@ -5,22 +5,27 @@ using System;
 public class Hideout : InteractiveObject {
 
     public NPC m_hideNPC;
-    public bool m_reveal;
+    //public TextBoxManager textbox;
 
 //     public TextBoxManager m_textBoxManager;
 
     // Use this for initialization
     public void Start()
     {
-        m_reveal = false;        
-        // Create a new NPC ?
+        
     }
 
     // Update is called once per frame
     public void Update () {
-        if (m_reveal)
+        if (m_hideNPC.GetReveal())
         {
-            // Remove this object, change for a NPC in hideNPC
+            m_hideNPC.transform.position = transform.position;
+            m_hideNPC.SetRenderer(true);
+            GetComponent<Renderer>().enabled = false;
+        } else
+        {
+            m_hideNPC.SetRenderer(false);
+            GetComponent<Renderer>().enabled = true;
         }
 	}
 
@@ -29,13 +34,16 @@ public class Hideout : InteractiveObject {
         // Message, NPC trouvé
         if (m_hideNPC != null)
         {
-            // Coucou !
-            m_reveal = true;
+            m_hideNPC.SetReveal(true);
+        } else {
+            string[] array = { "Il n'y a personne ici." };
+            //textbox.importDialog(array);
         }
     }
 
     public void setHideNPC(NPC npc)
     {
         m_hideNPC = npc;
+        m_hideNPC.SetReveal(false);
     }
 }
