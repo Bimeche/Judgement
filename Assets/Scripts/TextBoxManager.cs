@@ -15,6 +15,7 @@ public class TextBoxManager : MonoBehaviour {
 	public bool active;
 	public bool stopMoving;
 	public bool var;
+	public bool choix;
 
 	public PlayerController player;
 	// Use this for initialization
@@ -30,6 +31,7 @@ public class TextBoxManager : MonoBehaviour {
 		}*/
 		playerCame = false;
 		var = true;
+		choix = false;
 
 		if (active) {
 			stopMoving = true;
@@ -42,6 +44,10 @@ public class TextBoxManager : MonoBehaviour {
 	public void ImportDialog(string[] dial)
 	{
 		textLines = dial;
+		string[] tab = new string[textLines.Length+1];
+		textLines.CopyTo(tab, 0);
+		textLines = tab;
+		textLines [3] = "Sauvez cette personne ?\nOui (appuyer sur O) \nNon (appuyer sur N)";
 		
 		if (endAtLine == 0) 
 		{
@@ -61,11 +67,19 @@ public class TextBoxManager : MonoBehaviour {
 		}
 		Debug.Log(textLines.Length);
 		theText.text = textLines [currentLine];
-		if(currentLine == 0 && var)
-		{
+		if (currentLine == 0 && var) {
 			var = false;
-		}else if (Input.GetKeyDown (KeyCode.Space) && !var) 
+		} else if (Input.GetKeyDown (KeyCode.Space) && !var) {
+			if (currentLine < 3) {
+				currentLine++;
+			}
+		} else if (Input.GetKeyDown (KeyCode.N) && currentLine == 3) 
 		{
+			choix = false;
+			currentLine++;
+		} else if (Input.GetKeyDown (KeyCode.O) && currentLine == 3) 
+		{
+			choix = true;
 			currentLine++;
 		}
 
@@ -73,6 +87,7 @@ public class TextBoxManager : MonoBehaviour {
 		{
 			disableBox ();
 		}
+
 	
 	}
 
@@ -96,7 +111,7 @@ public class TextBoxManager : MonoBehaviour {
 		var = true;
 		//if(playerCame)
 			//Destroy (textBox);
-
+		Debug.Log (choix);	
 		stopMoving = false;
 		player.canMove = true;
 	}
