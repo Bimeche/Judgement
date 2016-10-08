@@ -33,21 +33,33 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             anim.SetBool("inputUp",true);
-			//Changer sprite
+            anim.SetBool("inputDown", false);
+            anim.SetBool("inputLeft", false);
+            anim.SetBool("inputRight", false);
+            //Changer sprite
             transform.Translate(Vector2.up * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.DownArrow))
 		{
             anim.SetBool("inputDown", true);
+            anim.SetBool("inputUp", false);
+            anim.SetBool("inputLeft", false);
+            anim.SetBool("inputRight", false);
             //Changer sprite
             transform.Translate(Vector2.down * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.LeftArrow))
 		{
             anim.SetBool("inputLeft", true);
+            anim.SetBool("inputUp", false);
+            anim.SetBool("inputDown", false);
+            anim.SetBool("inputRight", false);
             //Changer sprite
             transform.Translate(Vector2.left * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.RightArrow))
 		{
             anim.SetBool("inputRight", true);
+            anim.SetBool("inputUp", false);
+            anim.SetBool("inputDown", false);
+            anim.SetBool("inputLeft", false);
             //Changer sprite
             transform.Translate(Vector2.right * speed * Time.deltaTime);
         } else {
@@ -55,20 +67,6 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("inputDown", false);
             anim.SetBool("inputLeft", false);
             anim.SetBool("inputRight", false);
-
-            if (anim.GetBool("inputUp"))
-            {
-                anim.SetBool("idleUp", true);
-            } else if (anim.GetBool("inputDown"))
-            {
-                anim.SetBool("idleDown", true);
-            } else if (anim.GetBool("inputLeft"))
-            {
-                anim.SetBool("idleLeft", true);
-            } else if (anim.GetBool("inputRight"))
-            {
-                anim.SetBool("idleRight", true);
-            }
         }
 
     }
