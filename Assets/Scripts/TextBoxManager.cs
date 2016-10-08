@@ -41,17 +41,13 @@ public class TextBoxManager : MonoBehaviour {
 		}
 	}
 
-	public void ImportDialog(string[] dial, bool isHuman)
+	public void ImportDialog(string[] dial)
 	{
 		textLines = dial;
-		if (isHuman) 
-		{
-			string[] tab = new string[textLines.Length+1];
-			textLines.CopyTo(tab, 0);
-			textLines = tab;
-			textLines [3] = "Sauvez cette personne ?\nOui (appuyer sur O) \nNon (appuyer sur N)";
-		}
-
+		string[] tab = new string[textLines.Length+1];
+		textLines.CopyTo(tab, 0);
+		textLines = tab;
+		textLines [3] = "Sauvez cette personne ?\nOui (appuyer sur O) \nNon (appuyer sur N)";
 		
 		if (endAtLine == 0) 
 		{

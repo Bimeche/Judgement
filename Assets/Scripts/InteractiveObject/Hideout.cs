@@ -35,7 +35,7 @@ public class Hideout : InteractiveObject {
             m_hideNPC.SetReveal(true);
         } else {
             string[] array = { "Il n'y a personne ici." };
-            textbox.ImportDialog(array, false);
+            textbox.ImportDialog(array);
         }
     }
 

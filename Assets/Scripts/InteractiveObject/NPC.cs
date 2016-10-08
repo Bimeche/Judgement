@@ -1,22 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
-//using System;
+using System;
 
 public class NPC : InteractiveObject {
 
     public TextBoxManager m_textBox;
-	public string[] dialogs;
+    public string[] dialogs;
     public bool reveal;
 	public int okay;
-	public AssociateTextNPC assosText;
+	public TextAsset text;
 
     // Use this for initialization
     public void Start()
     {
 		okay = 0;
-		int type = Random.Range (1, 4);
-		dialogs = assosText.GenerateDial (type);
-		Debug.Log (type);
+		if (text != null)
+			dialogs = (text.text.Split('\n'));
     }
 
     void SetNPC(string[] dials, bool rev)
@@ -46,7 +45,7 @@ public class NPC : InteractiveObject {
 		{
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
-				m_textBox.ImportDialog(dialogs,true);
+				m_textBox.ImportDialog(dialogs);
 				okay = 2;
 			}
 		}
@@ -54,6 +53,9 @@ public class NPC : InteractiveObject {
 
     public override void Interact()
     {
+        // dialogue
+
+        throw new NotImplementedException();
     }
 
 	void OnTriggerEnter2D(Collider2D other)
