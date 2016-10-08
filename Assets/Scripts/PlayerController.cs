@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float radius;
     private Vector2 pos;
-    public bool canMove;
+	public bool canMove;
 
     void Update()
     {

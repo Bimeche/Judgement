@@ -1,0 +1,66 @@
+Phrases de dialogues :
+Bons : 
+1+++« Il y a si peu de places dans votre vaisseau, prenez quelqu’un d’autres mon cher ami. »
+2+++« Au moins si je meurs aujourd’hui je le fais en sachant que j’ai sauvé la famille Durand il y a un an. »
+3++« Vous devriez plutôt emmener avec vous des gens plus jeunes que moi, ils sont le futur de l’humanité.»
+4+« Je ne veux pas laisser mon chat ici, je l’aime tellement fort. »
+5++« J’ai peur de mourir, mais si c’est ainsi je l’accepte. »
+6++« Avez-vous vu ma famille ? Quand je suis rentré ils n’étaient plus là, je m’inquiète tant… »
+7+++« Mon ami, si Dieu nous rappelle auprès de lui c’est qu’il est temps. »
+8+++« Vous venez nous aider ? Je peux vous conduire jusqu’à des gens blessés qui ont besoin d’aide. »
+9+++«Monsieur vous allez bien ? Vous pouvez venir avec moi j’ai un bunker pour me cacher. »
+10+++«Cette année avec mon association nous avons réussi à nourrir 20 familles, et aujourd’hui où en sommes-nous ? »
+11++« J’ai dédié ma vie à mes trois enfants que j’ai élevé seule, je remercie la vie pour mes trois trésors. »
+12+« J’ai perdu tant d’année loin de ma fille en prison et maintenant que je l’ai retrouvé c’est pour tout perdre… »
+13++« Je ne lui ai jamais dit combien je l’aimais, j’aurais tellement du lui dire… »
+14+++« On m’a dit qu’il y avait de quoi se cacher pas très loin d’ici, vous devriez aller vous cacher. »
+15++« Vous avez vu mon enfant ? Elle était à l’école lors de l’annonce mais une météorite a tout détruit… »
+16+« Il me reste une barre de chocolat si vous avez faim ? »
+17++« Nous avions prévu de baisser le chiffre du chômage par deux grâce à notre projet… »
+18+++«Venez à l’abri, ne restez pas ici. »
+19+«Je n’ai pas peur de mourir s’il est temps. »
+20+++«Je peux vous aider à retrouver votre famille au besoin monsieur, je viens d’aider une famille à l’instant. »
+21+++«La vie est si courte, mon petit-frère n’aura pas eu le temps de vivre pleinement sa vie… »
+22++«Vous devez venir m’aider, ce petit garçon est coincé. »
+23+«Si vous voyez ma famille, dites lui que je la cherche. »
+24++«Je pardonne tous ceux qui m’ont fait du mal, ma mère m’a toujours dit de le faire pour ne rien regretter à ma mort. »
+25++«J’ai peur, suis-je déjà mort ? J’ai laissé ma meilleure cachette à ma petite sœur. »
+26+«Ma femme devait me retrouver ici mais elle n’arrive pas, elle est tellement généreuse elle a du aidé quelqu’un. »
+27+«Le bâtiment pour loger les orphelins vient d’être détruit, il faut aller voir si on peut aider… »
+28++«Je viens de tuer quelqu’un, je n’aurais jamais du la conduire aux urgences, la météorite ne l’aurait jamais percuté. »
+29+«Cette ville était si belle, tous ces jours à la considérer comme acquise… »
+30+«Hier je me suis disputé avec ma meilleure amie, je la cherche pour m’excuser, je ne veux pas la perdre ainsi. »
+31+«Ce matin j’étais de mauvaise humeur, je suis partie sans dire au revoir, une erreur… » 
+32+«J’ai volé de l’argent, je ne sais pas si je devrais le rendre comme prévu. »
+Mauvais : 
+1--« Prenez moi avec vous, j’ai servie dans les forces de l’ordre je vous serais très utile. »
+2-«Je vous ai vu prendre une personne de ma famille avec vous, vous ne pouvez pas nous séparer… »
+3---«Je vous tuerai si vous ne faites pas une place pour moi sur votre arche de Noé. »
+4-«Je refuse de mourir, je tiens à ma vie. Je veux faire encore tellement de chose… »
+5--«Je ferais tout ce que vous voudrez mon ami, puis-je me joindre à vous ? »
+6---«Tous ces gens à l’agonie m’insupporte, ne peuvent-ils pas mourir en silence ? »
+7-«J’ai toujours fait ce qu’on m’a demandé dans la vie, je pensais qu’un jour ce serait à mon tour de donner les ordres. »
+8--«Monsieur, j’ai besoin d’aide. Je cherche pour me cacher, je ne veux pas mourir comme les autres. »
+9-«Donnez-moi votre argent, je dois m’acheter à manger et pour mon chien aussi. »
+10--«Je suis quelqu’un de bien, une fois j’ai évité d’écraser quelqu’un. »
+11-«Ma grand-mère est morte il y a 4 mois et elle ne m’aimait pas, je ne veux pas aller la retrouver. »
+12--«Cet enfant croyait qu’il aurait la dernière boite de céréales mais c’est moi qui l’ait eu. »
+13---«Je dois vous payer combien pour avoir ma place ? »
+14--«Une petite fille m’a couru après alors j’ai couru puis elle s’est faite écrasé par un météorite, c’était étrange. »
+15-«J’ai fait des avances à ma belle-fille, étrangement elle n’a pas apprécié… »
+16-«J’ai entendu un bruit dans un arbre alors j’ai envoyé un caillou puis il n’y a plus eu de bruit, je me suis senti bien. »
+17-«J’ai jugé beaucoup de personne dans ma vie, et j’ai aidé des gens qu’il fallait pas. »
+18---«Elle le méritait, je vous le promets. Elle m’avait trompé donc j’ai été obligé… »
+19--«J’ai perdu tout mon argent au casino, mais j’ai convaincu le gérant de me les rendre. »
+20-«Je sais que j’aurais du rentrer chez moi pour retrouver ma famille mais si je dois me cacher à un endroit sûr. »
+21-«Si je meurs au moins j’ai réussi à voler le copain de mon ennemi juré. »
+22--«J’ai des millions et je suis condamné aussi, la vie est injuste il y a pas à dire. »
+23--«Si j’ai des enfants je peux venir sur votre vaisseau ? »
+24-«J’aimais beaucoup mon métier car je pouvais tuer légalement vous vous rendez compte. »
+25---«Je ne mérite pas de mourir, je suis mieux que tous ces gens après tout. »
+26---«Si j’avais su que voler serait aussi facile aujourd’hui, je me serais pas embêté hier à braquer cette épicerie. »
+27---«C’est marrant de voir tous ces pions s’agiter, nous partons bientôt ? »
+28---«J’ai dit à des gens que je les mènerais à un endroit sûr, du coup ils m’ont nourri pour gratuit, ils sont naïfs. »
+29---«J’espère que ma mère est morte, c’était un enfer de vivre avec elle. »
+30---«Ma mère me dit que je suis égoïste, elle n’a pas compris que telle mère tel fils. Du coup j’ai du en finir avec elle. »
+
