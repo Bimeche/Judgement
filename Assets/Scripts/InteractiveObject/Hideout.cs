@@ -4,19 +4,21 @@ using System;
 
 public class Hideout : InteractiveObject {
 
-    public NPC hideNPC;
-    public bool reveal;
+    public NPC m_hideNPC;
+    public bool m_reveal;
+
+//     public TextBoxManager m_textBoxManager;
 
     // Use this for initialization
     public void Start()
     {
-        reveal = false;        
+        m_reveal = false;        
         // Create a new NPC ?
     }
 
     // Update is called once per frame
     public void Update () {
-        if (reveal)
+        if (m_reveal)
         {
             // Remove this object, change for a NPC in hideNPC
         }
@@ -25,15 +27,15 @@ public class Hideout : InteractiveObject {
     public override void interact()
     {
         // Message, NPC trouvé
-        if (hideNPC != null)
+        if (m_hideNPC != null)
         {
             // Coucou !
-            reveal = true;
+            m_reveal = true;
         }
     }
 
     public void setHideNPC(NPC npc)
     {
-        hideNPC = npc;
+        m_hideNPC = npc;
     }
 }

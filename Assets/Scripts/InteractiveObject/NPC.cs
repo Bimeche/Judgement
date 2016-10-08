@@ -4,6 +4,8 @@ using System;
 
 public class NPC : InteractiveObject {
 
+//     public TextBoxManager m_textBoxManager;
+
     // Use this for initialization
     public void Start()
     {
