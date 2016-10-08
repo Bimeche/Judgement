@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class TextBoxManager : MonoBehaviour {
 
-	public string[] textLines = {"Je suis la","J'ai peur","Bouh"};
+	private string[] textLines = {"Je suis la","J'ai peur"};
 	public GameObject textBox;
 	public Text theText;
 
@@ -16,6 +16,14 @@ public class TextBoxManager : MonoBehaviour {
 
 	public PlayerController player;
 	// Use this for initialization
+
+	/*void Reset()
+	{
+		int k = 0;
+		for(int i=0;i<
+		if(
+	}*/
+
 	void Start () {
 	
 		player = FindObjectOfType<PlayerController> ();
@@ -42,6 +50,7 @@ public class TextBoxManager : MonoBehaviour {
 		//{
 		//	endAtLine = textLines.Length - 1;
 		//}
+
 		enableBox ();
 		
 	}

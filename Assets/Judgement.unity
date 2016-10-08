@@ -117,14 +117,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1602be3e66c1b4a9ba3c60699de465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textLines:
-  - Je suis la
-  - J'ai peur
-  - Bouh
   textBox: {fileID: 1941458149}
   theText: {fileID: 1394537199}
   currentLine: 0
-  endAtLine: 3
+  endAtLine: 0
   active: 1
   stopMoving: 0
   player: {fileID: 0}
