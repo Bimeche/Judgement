@@ -4,18 +4,68 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    private Rigidbody2D rb2d;
+    public float radius;
+    private Vector2 pos;
+	public bool canMove;
 
-    void Start()
+    void Update()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        if (!canMove)
+        {
+            return;
+        }
+        Movement();
+        NoRotate();
+        Interact();
     }
-    void FixedUpdate()
-    {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-        rb2d.AddForce(movement*speed); 
 
+    void Movement()
+    {
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+			//Changer sprite
+            transform.Translate(Vector2.up * speed * Time.deltaTime);
+        }else if (Input.GetKey(KeyCode.DownArrow))
+		{
+			//Changer sprite
+			transform.Translate(Vector2.down * speed * Time.deltaTime);
+        }else if (Input.GetKey(KeyCode.LeftArrow))
+		{
+			//Changer sprite
+			transform.Translate(Vector2.left * speed * Time.deltaTime);
+        }else if (Input.GetKey(KeyCode.RightArrow))
+		{
+			//Changer sprite
+			transform.Translate(Vector2.right * speed * Time.deltaTime);
+        }
+    }
+
+    void NoRotate()
+    {
+        if (transform.rotation.x != 0 || transform.rotation.y != 0 || transform.rotation.z != 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+    }
+
+    Collider2D CheckIfCloseEnough()
+    {
+        return Physics2D.OverlapCircle(pos, radius);
+    }
+
+    void Interact()
+    {
+        pos = transform.position;
+        Debug.Log(pos);
+        Collider2D close = CheckIfCloseEnough();
+        if (Input.GetKey(KeyCode.Space) && close != null)
+        {
+            float dot = close.transform.position.x * transform.forward.x + close.transform.position.y * transform.forward.y;
+            if (dot >= 0)
+            {
+                Debug.Log("OOOOOUUUUUUAAAAAAIIIIIISSSSSS");
+                close.gameObject.GetComponent<InteractiveObject>().Interact();
+            }
+        }
     }
 }
