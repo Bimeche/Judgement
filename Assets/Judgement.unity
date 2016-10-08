@@ -118,15 +118,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiles:
+  - {fileID: 1000011987716492, guid: 6342d57ec85259547beecd56e72da23f, type: 2}
+  - {fileID: 1000011484722378, guid: a586378d462a23a4094c0c0f2c7cd6b9, type: 2}
+  - {fileID: 1000012198134274, guid: f666c7fe866a3514eb97d0464b201d9d, type: 2}
+  - {fileID: 1000011474564508, guid: e89f167df64777e4bb0f672c1e4c30fa, type: 2}
+  - {fileID: 1000013785845418, guid: 128f580bcaff7d341bbab5559ea40cbe, type: 2}
+  - {fileID: 1000011738491564, guid: 6c4418f3779a4a341a390b194a8a8852, type: 2}
+  - {fileID: 1000010234634622, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
   - {fileID: 1000012485080392, guid: fc4a3377f5704704fb85089ee79ab938, type: 2}
   - {fileID: 1000012054511854, guid: 0e9fafe7a36c1d14faa5d2a33a512814, type: 2}
-  - {fileID: 1000011706936740, guid: 6342d57ec85259547beecd56e72da23f, type: 2}
-  - {fileID: 1000011308141032, guid: a586378d462a23a4094c0c0f2c7cd6b9, type: 2}
-  - {fileID: 1000014157384260, guid: f666c7fe866a3514eb97d0464b201d9d, type: 2}
-  - {fileID: 1000012967398318, guid: e89f167df64777e4bb0f672c1e4c30fa, type: 2}
-  - {fileID: 1000012248309426, guid: 128f580bcaff7d341bbab5559ea40cbe, type: 2}
-  - {fileID: 1000011198130220, guid: 35747c1898b338043a2eecacee8caea3, type: 2}
-  - {fileID: 1000011213961440, guid: 799e6bbc50a27814c9b557aee6acd5d1, type: 2}
 --- !u!4 &926435065
 Transform:
   m_ObjectHideFlags: 0
@@ -198,9 +198,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 26.5
   orthographic: 1
-  orthographic size: 29.1
+  orthographic size: 500
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -221,7 +221,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1065829574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -323,7 +323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2143437545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,7 +399,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1773742549
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8cede638a06f92c449fadc6979bf0cb0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9cde05a77db47b843a276a3d1ff29b51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -410,8 +410,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2143437544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.62, y: -1.23, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
