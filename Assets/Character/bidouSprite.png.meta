@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 50dfdab5700aa0a48814ce9f628557aa
+timeCreated: 1475952896
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bidouSprite_0
+    21300002: bidouSprite_1
+    21300004: bidouSprite_2
+    21300006: bidouSprite_3
+    21300008: bidouSprite_4
+    21300010: bidouSprite_5
+    21300012: bidouSprite_6
+    21300014: bidouSprite_7
+    21300016: bidouSprite_8
+    21300018: bidouSprite_9
+    21300020: bidouSprite_10
+    21300022: bidouSprite_11
+    21300024: bidouSprite_12
+    21300026: bidouSprite_13
+    21300028: bidouSprite_14
+    21300030: bidouSprite_15
+    21300032: bidouSprite_16
+    21300034: bidouSprite_17
+    21300036: bidouSprite_18
+    21300038: bidouSprite_19
+    21300040: bidouSprite_20
+    21300042: bidouSprite_21
+    21300044: bidouSprite_22
+    21300046: bidouSprite_23
+    21300048: bidouSprite_24
+    21300050: bidouSprite_25
+    21300052: bidouSprite_26
+    21300054: bidouSprite_27
+    21300056: bidouSprite_28
+    21300058: bidouSprite_29
+    21300060: bidouSprite_30
+    21300062: bidouSprite_31
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bidouSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2391
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_1
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 2391
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_2
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 2391
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 2391
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 2391
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_5
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 2391
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_6
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 2391
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_7
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 2391
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1594
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_9
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1594
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_10
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1594
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_11
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1594
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 1594
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_13
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 1594
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_14
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 1594
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_15
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 1594
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 797
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_17
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 797
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_18
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 797
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_19
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 797
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_20
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 797
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_21
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 797
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_22
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 797
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_23
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 797
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_25
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 0
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_26
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 0
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 0
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_28
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 0
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_29
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 0
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_30
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 0
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bidouSprite_31
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 0
+        width: 428
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

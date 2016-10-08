@@ -8,6 +8,13 @@ public class PlayerController : MonoBehaviour
     private Vector2 pos;
 	public bool canMove;
 
+    public Animator anim;
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     void Update()
     {
         if (!canMove)

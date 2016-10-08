@@ -90,53 +90,6 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &862445335
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000010767769966, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010767769966, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010767769966, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010767769966, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010767769966, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010767769966, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010767769966, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010767769966, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 60000011343979002, guid: 510a8055ee38a9b4fa230a8e057338bd,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &926435063
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,10 +118,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiles:
+  - {fileID: 1000014201648416, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
+  - {fileID: 1000011909974424, guid: fc4a3377f5704704fb85089ee79ab938, type: 2}
+  - {fileID: 1000010364410404, guid: 0e9fafe7a36c1d14faa5d2a33a512814, type: 2}
   - {fileID: 1000011738491564, guid: 6c4418f3779a4a341a390b194a8a8852, type: 2}
-  - {fileID: 1000010234634622, guid: 510a8055ee38a9b4fa230a8e057338bd, type: 2}
-  - {fileID: 1000012485080392, guid: fc4a3377f5704704fb85089ee79ab938, type: 2}
-  - {fileID: 1000012054511854, guid: 0e9fafe7a36c1d14faa5d2a33a512814, type: 2}
   - {fileID: 1000013785845418, guid: 128f580bcaff7d341bbab5559ea40cbe, type: 2}
   - {fileID: 1000011474564508, guid: e89f167df64777e4bb0f672c1e4c30fa, type: 2}
   - {fileID: 1000011484722378, guid: a586378d462a23a4094c0c0f2c7cd6b9, type: 2}
@@ -199,6 +152,7 @@ GameObject:
   - 92: {fileID: 1065829577}
   - 124: {fileID: 1065829576}
   - 81: {fileID: 1065829575}
+  - 114: {fileID: 1065829580}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -247,7 +201,7 @@ Camera:
   far clip plane: 1000
   field of view: 26.5
   orthographic: 1
-  orthographic size: 3000
+  orthographic size: 500
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -274,6 +228,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1065829580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1065829574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8573e7080fb6d4ca8691da616a41a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2143437549}
 --- !u!1 &1285461481
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +810,7 @@ Animator:
   m_GameObject: {fileID: 2143437544}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 04001c7e6e78f434081471bfe99d6a64, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
