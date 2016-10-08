@@ -32,21 +32,45 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
+            anim.SetBool("inputUp",true);
 			//Changer sprite
             transform.Translate(Vector2.up * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.DownArrow))
 		{
-			//Changer sprite
-			transform.Translate(Vector2.down * speed * Time.deltaTime);
+            anim.SetBool("inputDown", true);
+            //Changer sprite
+            transform.Translate(Vector2.down * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.LeftArrow))
 		{
-			//Changer sprite
-			transform.Translate(Vector2.left * speed * Time.deltaTime);
+            anim.SetBool("inputLeft", true);
+            //Changer sprite
+            transform.Translate(Vector2.left * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.RightArrow))
 		{
-			//Changer sprite
-			transform.Translate(Vector2.right * speed * Time.deltaTime);
+            anim.SetBool("inputRight", true);
+            //Changer sprite
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
+        } else {
+            anim.SetBool("inputUp", false);
+            anim.SetBool("inputDown", false);
+            anim.SetBool("inputLeft", false);
+            anim.SetBool("inputRight", false);
+
+            if (anim.GetBool("inputUp"))
+            {
+                anim.SetBool("idleUp", true);
+            } else if (anim.GetBool("inputDown"))
+            {
+                anim.SetBool("idleDown", true);
+            } else if (anim.GetBool("inputLeft"))
+            {
+                anim.SetBool("idleLeft", true);
+            } else if (anim.GetBool("inputRight"))
+            {
+                anim.SetBool("idleRight", true);
+            }
         }
+
     }
 
     void NoRotate()

@@ -1,7 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 50dfdab5700aa0a48814ce9f628557aa
-timeCreated: 1475952896
+timeCreated: 1475960199
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -37,18 +36,6 @@ TextureImporter:
     21300058: bidouSprite_29
     21300060: bidouSprite_30
     21300062: bidouSprite_31
-=======
-<<<<<<< HEAD
-guid: 623fb61717cd6644fb56a1372911e1ca
-timeCreated: 1475956198
-=======
-guid: 5445ab6ed04c8ff4ebc5f8130262f877
-timeCreated: 1475956619
->>>>>>> origin/master
-licenseType: Free
-TextureImporter:
-  fileIDToRecycleName: {}
->>>>>>> refs/remotes/origin/master
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -74,13 +61,8 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-<<<<<<< HEAD
     filterMode: 0
     aniso: 16
-=======
-    filterMode: -1
-    aniso: -1
->>>>>>> refs/remotes/origin/master
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -88,28 +70,19 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-<<<<<<< HEAD
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> refs/remotes/origin/master
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<< HEAD
   spritePixelsToUnits: 1
-=======
-  spritePixelsToUnits: 100
->>>>>>> refs/remotes/origin/master
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
       name: bidouSprite_0
@@ -527,9 +500,6 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
-=======
-    sprites: []
->>>>>>> refs/remotes/origin/master
     outline: []
   spritePackingTag: 
   userData: 
