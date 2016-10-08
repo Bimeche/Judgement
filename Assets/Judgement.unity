@@ -90,6 +90,56 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &926435063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 926435065}
+  - 114: {fileID: 926435064}
+  m_Layer: 0
+  m_Name: MapManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &926435064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926435063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f7d46daf1551ea48b78346b0f6fc9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 1000012485080392, guid: fc4a3377f5704704fb85089ee79ab938, type: 2}
+  - {fileID: 1000012054511854, guid: 0e9fafe7a36c1d14faa5d2a33a512814, type: 2}
+  - {fileID: 1000011706936740, guid: 6342d57ec85259547beecd56e72da23f, type: 2}
+  - {fileID: 1000011308141032, guid: a586378d462a23a4094c0c0f2c7cd6b9, type: 2}
+  - {fileID: 1000014157384260, guid: f666c7fe866a3514eb97d0464b201d9d, type: 2}
+  - {fileID: 1000012967398318, guid: e89f167df64777e4bb0f672c1e4c30fa, type: 2}
+  - {fileID: 1000012248309426, guid: 128f580bcaff7d341bbab5559ea40cbe, type: 2}
+  - {fileID: 1000011198130220, guid: 35747c1898b338043a2eecacee8caea3, type: 2}
+  - {fileID: 1000011213961440, guid: 799e6bbc50a27814c9b557aee6acd5d1, type: 2}
+--- !u!4 &926435065
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926435063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &1065829574
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +200,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.16
+  orthographic size: 29.1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -171,7 +221,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1065829574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 10, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -193,7 +243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2100505408
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -251,7 +301,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.32, y: -5.09}
   serializedVersion: 2
   m_Size: {x: 1.3, y: 10.8}
 --- !u!1 &2143437544
@@ -273,7 +323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2143437545
 MonoBehaviour:
   m_ObjectHideFlags: 0
