@@ -801,6 +801,7 @@ MonoBehaviour:
   speed: 250
   radius: 0
   canMove: 1
+  anim: {fileID: 0}
 --- !u!95 &2143437546
 Animator:
   serializedVersion: 3
@@ -810,7 +811,7 @@ Animator:
   m_GameObject: {fileID: 2143437544}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 04001c7e6e78f434081471bfe99d6a64, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8acd5dbba15a8f743943647ace8a45b9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
