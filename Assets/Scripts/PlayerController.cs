@@ -9,6 +9,10 @@ public class PlayerController : MonoBehaviour
 	public bool canMove;
 
     public Animator anim;
+    private bool inputUp;
+    private bool inputDown;
+    private bool inputLeft;
+    private bool inputRight;
 
     void Start()
     {
