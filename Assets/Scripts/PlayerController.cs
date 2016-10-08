@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (canMove)
+        if (!canMove)
         {
             return;
         }
@@ -59,7 +59,8 @@ public class PlayerController : MonoBehaviour
             float dot = close.transform.position.x * transform.forward.x + close.transform.position.y * transform.forward.y;
             if (dot >= 0)
             {
-                close.gameObject.GetComponent<InteractiveObject>.Interact();
+                Debug.Log("OOOOOUUUUUUAAAAAAIIIIIISSSSSS");
+                //close.gameObject.GetComponent<InteractiveObject>.Interact();
             }
         }
     }
