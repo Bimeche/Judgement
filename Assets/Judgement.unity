@@ -121,7 +121,7 @@ MonoBehaviour:
   theText: {fileID: 1394537199}
   currentLine: 0
   endAtLine: 0
-  active: 0
+  active: 1
   stopMoving: 0
   player: {fileID: 0}
 --- !u!4 &348190948
