@@ -17,12 +17,6 @@ public class TextBoxManager : MonoBehaviour {
 	public PlayerController player;
 	// Use this for initialization
 
-	/*void Reset()
-	{
-		int k = 0;
-		for(int i=0;i<
-		if(
-	}*/
 
 	void Start () {
 	
