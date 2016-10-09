@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 pos;
 	public bool canMove = true;
 	int goodness;
+    int nbPassenger;
 
     private Rigidbody2D rb;
 
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {	
 		goodness = 0;
+        nbPassenger = 0;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         cam = FindObjectOfType<Camera>();
@@ -140,31 +142,14 @@ public class PlayerController : MonoBehaviour
         collide = false;
     }
 	public void setGood(int good){
+        nbPassenger ++;
 		goodness += good;
-		Debug.Log (goodness);
 	}
 	public int getGood(){
 		return goodness;
 	}
-    // void Interact()
-    // {
-    //     pos = transform.position;
-    //     Debug.Log(pos);
-    //     Collider2D[] close = CheckIfCloseEnough();
-    //     if (close != null)
-    //     {
-    //int i = 0;
-    //string tagOfClose;
-    //while(i<close.Length && )
-    //{
-
-    //}
-    //         //float dot = close.transform.position.x * transform.forward.x + close.transform.position.y * transform.forward.y;
-    //         //if (dot >= 0)
-    //         //{
-    //             Debug.Log("OOOOOUUUUUUAAAAAAIIIIIISSSSSS");
-    //             close.gameObject.GetComponent<InteractiveObject>().Interact();
-    //         //}
-    //     }
-    // }
+    public int getPassenger()
+    {
+        return nbPassenger;
+    }
 }

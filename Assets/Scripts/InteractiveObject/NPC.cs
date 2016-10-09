@@ -12,6 +12,8 @@ public class NPC : InteractiveObject {
 	int type;
 	public PlayerController player;
 
+    private GameObject currentTarget;
+
     // Use this for initialization
     public void Start()
     {
@@ -21,7 +23,6 @@ public class NPC : InteractiveObject {
         okay = 0;
 		type= Random.Range (1, 4);
 		dialogs = assosText.GenerateDial (type);
-		Debug.Log (type);
 
     }
 
@@ -56,8 +57,23 @@ public class NPC : InteractiveObject {
 				okay = 2;
 			}
 		}
-			
-	}
+        
+        if (m_textBox.choix)
+        {
+            Debug.Log(currentTarget);
+            currentTarget.SetActive(false);
+            m_textBox.choix = false;
+            if (type == 1)
+                player.setGood(10);
+            if (type == 2)
+                player.setGood(5);
+            if (type == 3)
+                player.setGood(-10);
+            if (type == 4)
+                player.setGood(-5);
+        }
+
+    }
 
     public override void Interact()
     {
@@ -67,25 +83,15 @@ public class NPC : InteractiveObject {
 	{
 		if(okay !=2)
 			okay = 1;
+        currentTarget = this.gameObject;
+        Debug.Log(currentTarget);
+        //currentTarget = GetComponent<Renderer>().gameObject;
 
-	}
+    }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log(m_textBox.choix);
-        if (m_textBox.choix)
-        {
-            GetComponent<Renderer>().gameObject.SetActive(false);
-            m_textBox.choix = false;
-			if (type == 1)
-				player.setGood (10);
-			if (type==2)
-				player.setGood (5);
-			if (type==3)
-				player.setGood (-10);
-			if (type==4)
-				player.setGood (-5);
-        }
+       
     }
 
     public void setTextBox(TextBoxManager txtBox)

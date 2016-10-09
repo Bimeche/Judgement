@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 5c143576b85145f44bdc5a3caf11097e
-timeCreated: 1475998559
+guid: aef82aeb270d457488016b3e86cf8c7f
+timeCreated: 1475998706
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: gregoireSprite_0
-    21300002: gregoireSprite_1
-    21300004: gregoireSprite_2
-    21300006: gregoireSprite_3
+    21300000: mulanSprite_0
+    21300002: mulanSprite_1
+    21300004: mulanSprite_2
+    21300006: mulanSprite_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -57,52 +57,52 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gregoireSprite_0
+      name: mulanSprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 916
-        height: 1577
+        width: 989
+        height: 1750
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gregoireSprite_1
+      name: mulanSprite_1
       rect:
         serializedVersion: 2
-        x: 916
+        x: 989
         y: 0
-        width: 916
-        height: 1577
+        width: 989
+        height: 1750
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gregoireSprite_2
+      name: mulanSprite_2
       rect:
         serializedVersion: 2
-        x: 1832
+        x: 1978
         y: 0
-        width: 916
-        height: 1577
+        width: 989
+        height: 1750
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gregoireSprite_3
+      name: mulanSprite_3
       rect:
         serializedVersion: 2
-        x: 2748
+        x: 2967
         y: 0
-        width: 916
-        height: 1577
+        width: 989
+        height: 1750
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

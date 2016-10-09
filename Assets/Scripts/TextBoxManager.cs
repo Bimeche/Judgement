@@ -69,7 +69,7 @@ public class TextBoxManager : MonoBehaviour {
 		{
 			return;
 		}
-		Debug.Log(textLines.Length);
+		
 		theText.text = textLines [currentLine];
 		if (currentLine == 0 && var) {
 			var = false;
