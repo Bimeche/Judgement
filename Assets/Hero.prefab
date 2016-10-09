@@ -24,6 +24,7 @@ GameObject:
   - 95: {fileID: 95000014267886680}
   - 114: {fileID: 114000011620163814}
   - 61: {fileID: 61000011341067398}
+  - 60: {fileID: 60000011432222388}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -61,6 +62,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &60000011432222388
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010745033624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 55.171875, y: -311.58612}
+      - {x: 5.015625, y: -286.508}
+      - {x: 55.171875, y: -291.52362}
+      - {x: 73.5625, y: -278.14862}
+      - {x: 73.5625, y: -222.97673}
+      - {x: 26.75, y: -199.57048}
+      - {x: 38.453125, y: -157.7736}
+      - {x: 73.5625, y: 215.05452}
+      - {x: 73.5625, y: 353.82013}
+      - {x: -10.03125, y: 398.96075}
+      - {x: -125.390625, y: 398.96075}
+      - {x: -137.09375, y: 393.94513}
+      - {x: -137.09375, y: 139.82014}
+      - {x: -117.03125, y: 129.7889}
+      - {x: -103.65625, y: 129.7889}
+      - {x: -107, y: -157.7736}
+      - {x: -83.59375, y: -177.8361}
+      - {x: -70.21875, y: -174.49236}
+      - {x: -73.5625, y: -373.4455}
+      - {x: -55.171875, y: -385.14862}
+      - {x: 51.828125, y: -385.14862}
+      - {x: 71.890625, y: -378.46112}
+      - {x: 73.5625, y: -371.77362}
+      - {x: 73.5625, y: -321.61737}
 --- !u!61 &61000011341067398
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -106,7 +145,6 @@ MonoBehaviour:
   speed: 250
   radius: 0
   canMove: 1
-  anim: {fileID: 0}
 --- !u!212 &212000014141203986
 SpriteRenderer:
   m_ObjectHideFlags: 1

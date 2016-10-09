@@ -8,6 +8,11 @@ public class FollowPlayer : MonoBehaviour
 
     void Update()
     {
-        transform.position = new Vector3(player.position.x, player.position.y, -10); // Camera follows the player with specified offset position
+        
+    }
+
+    public void setPlayer(Transform hero)
+    {
+        this.player = hero;
     }
 }
