@@ -26,24 +26,23 @@ public class GameManagerScript : MonoBehaviour {
 
     private Transform instanceHero;
 
+    private PlayerController player;
+
     private Vector2[] pnjPos;
 
 	// Use this for initialization
 	void Start () {
+        player = FindObjectOfType<PlayerController>();
         pnjPos = new Vector2[9];
         pnjPos = mg.MapSetup();
-        /*for (int i = 0; i < pnjPos.Length; i++)
-        {
-            Debug.Log("Pos" + i + ": " + pnjPos[i].ToString());
-        }*/
         for (int i = 0; i < pnjs.Length; i++)
         {
             pnjs[i].transform.Translate (pnjPos[i].x,pnjPos[i].y,0f);
         }
-        minuteLeft = 5;
+        minuteLeft = 2;
         secondLeft = 0;
         msecondLeft = 0;
-        TotalPlace = 2;
+        TotalPlace = 5;
 }
 
     void Awake()
@@ -53,13 +52,16 @@ public class GameManagerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (FindObjectOfType<PlayerController>().getPassenger() >= TotalPlace)
+
+        if (Input.GetKeyDown("escape")) { 
+            Application.Quit(); // Quits the game
+        }
+
+            if (player.getPassenger() >= TotalPlace || player.getTalk() == pnjs.Length)
         {
             GameOver();
         }
-        else
-        {
-            placeText.text = "Nb Place: " + FindObjectOfType<PlayerController>().getPassenger().ToString() + "/" + TotalPlace.ToString();
+            placeText.text = "Nb Places: " + player.getPassenger().ToString() + "/" + TotalPlace.ToString();
 
             if (msecondLeft <= 0)
             {
@@ -92,12 +94,11 @@ public class GameManagerScript : MonoBehaviour {
                 msecondLeft -= 1;
                 timeText.text = "Temps restant: " + minuteLeft + ":" + secondLeft + ":" + msecondLeft;
             }
-        }
     }
 
     void GameOver()
     {
-        if (FindObjectOfType<PlayerController>().getGood() > 0) {
+        if (player.getGood() > 0 && player.getPassenger()>=2) {
             SceneManager.LoadScene(3);//GoodEnd
         } else
         {
