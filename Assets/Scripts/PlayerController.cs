@@ -8,13 +8,6 @@ public class PlayerController : MonoBehaviour
     private Vector2 pos;
 	public bool canMove;
 
-    public Animator anim;
-
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
-
     void Update()
     {
         if (!canMove)
@@ -32,43 +25,21 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            anim.SetBool("inputUp",true);
-            anim.SetBool("inputDown", false);
-            anim.SetBool("inputLeft", false);
-            anim.SetBool("inputRight", false);
-            //Changer sprite
+			//Changer sprite
             transform.Translate(Vector2.up * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.DownArrow))
 		{
-            anim.SetBool("inputDown", true);
-            anim.SetBool("inputUp", false);
-            anim.SetBool("inputLeft", false);
-            anim.SetBool("inputRight", false);
-            //Changer sprite
-            transform.Translate(Vector2.down * speed * Time.deltaTime);
+			//Changer sprite
+			transform.Translate(Vector2.down * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.LeftArrow))
 		{
-            anim.SetBool("inputLeft", true);
-            anim.SetBool("inputUp", false);
-            anim.SetBool("inputDown", false);
-            anim.SetBool("inputRight", false);
-            //Changer sprite
-            transform.Translate(Vector2.left * speed * Time.deltaTime);
+			//Changer sprite
+			transform.Translate(Vector2.left * speed * Time.deltaTime);
         }else if (Input.GetKey(KeyCode.RightArrow))
 		{
-            anim.SetBool("inputRight", true);
-            anim.SetBool("inputUp", false);
-            anim.SetBool("inputDown", false);
-            anim.SetBool("inputLeft", false);
-            //Changer sprite
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
-        } else {
-            anim.SetBool("inputUp", false);
-            anim.SetBool("inputDown", false);
-            anim.SetBool("inputLeft", false);
-            anim.SetBool("inputRight", false);
+			//Changer sprite
+			transform.Translate(Vector2.right * speed * Time.deltaTime);
         }
-
     }
 
     void NoRotate()
