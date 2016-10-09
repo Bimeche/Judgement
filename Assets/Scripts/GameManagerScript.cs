@@ -10,7 +10,7 @@ public class GameManagerScript : MonoBehaviour {
     public Camera cam;
     public Transform hero;//The hero prefab
     public Transform pnj;//The pnj prefab
-    public NPC[] pnjs;//Created pnjs
+    public GameObject[] pnjs;//Created pnjs
 
     public Canvas canvas;
     public TextBoxManager txtBox;
@@ -26,11 +26,22 @@ public class GameManagerScript : MonoBehaviour {
 
     private Transform instanceHero;
 
+    private Vector2[] pnjPos;
+
 	// Use this for initialization
 	void Start () {
-        mg.MapSetup();
-        minuteLeft = 0;
-        secondLeft = 20;
+        pnjPos = new Vector2[9];
+        pnjPos = mg.MapSetup();
+        /*for (int i = 0; i < pnjPos.Length; i++)
+        {
+            Debug.Log("Pos" + i + ": " + pnjPos[i].ToString());
+        }*/
+        for (int i = 0; i < pnjs.Length; i++)
+        {
+            pnjs[i].transform.Translate (pnjPos[i].x,pnjPos[i].y,0f);
+        }
+        minuteLeft = 5;
+        secondLeft = 0;
         msecondLeft = 0;
         TotalPlace = 2;
 }

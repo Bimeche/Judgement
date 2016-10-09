@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 5c143576b85145f44bdc5a3caf11097e
-timeCreated: 1475998559
+guid: a74238c236567764a84c3c362d8130a5
+timeCreated: 1476002220
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: gregoireSprite_0
-    21300002: gregoireSprite_1
-    21300004: gregoireSprite_2
-    21300006: gregoireSprite_3
+    21300000: baymaxSprite_0
+    21300002: baymaxSprite_1
+    21300004: baymaxSprite_2
+    21300006: baymaxSprite_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -57,52 +57,52 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gregoireSprite_0
+      name: baymaxSprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 916
-        height: 1577
+        width: 1546
+        height: 1664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gregoireSprite_1
+      name: baymaxSprite_1
       rect:
         serializedVersion: 2
-        x: 916
+        x: 1546
         y: 0
-        width: 916
-        height: 1577
+        width: 1546
+        height: 1664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gregoireSprite_2
+      name: baymaxSprite_2
       rect:
         serializedVersion: 2
-        x: 1832
+        x: 3092
         y: 0
-        width: 916
-        height: 1577
+        width: 1546
+        height: 1664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gregoireSprite_3
+      name: baymaxSprite_3
       rect:
         serializedVersion: 2
-        x: 2748
+        x: 4638
         y: 0
-        width: 916
-        height: 1577
+        width: 1546
+        height: 1664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
