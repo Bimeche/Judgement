@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using System;
+using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour {
 
@@ -12,6 +15,11 @@ public class GameManagerScript : MonoBehaviour {
     public Canvas canvas;
     public TextBoxManager txtBox;
     public GameObject assocText;
+    public Text timeText;
+
+    public double minuteLeft = 5;
+    public double secondLeft = 0;
+    public double msecondLeft = 0;
 
     private Transform instanceHero;
 
@@ -35,6 +43,45 @@ public class GameManagerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        if (msecondLeft <= 0)
+        {
+            if (secondLeft <= 0)
+            {
+                if (minuteLeft <= 0)
+                {
+                    GameOver();
+                }
+                else
+                {
+                    msecondLeft = 59;
+                    secondLeft = 59;
+                    minuteLeft -= 1;
+                }
+            }
+            else
+            {
+                msecondLeft = 59;
+                secondLeft -= 1;
+            }
+        }else if(msecondLeft < 10)
+        {
+            msecondLeft -= 1;
+            timeText.text = "Temps restant: " + minuteLeft + ":" + secondLeft + ":0" + msecondLeft;
+        }
+        else
+        {
+            msecondLeft -= 1;
+            timeText.text = "Temps restant: " + minuteLeft + ":" + secondLeft + ":" + msecondLeft;
+        }
+    }
+
+    void GameOver()
+    {
+        if (FindObjectOfType<PlayerController>().getGood() > 0) {
+            SceneManager.LoadScene(3);//GoodEnd
+        } else
+        {
+            SceneManager.LoadScene(2);//BadEnd
+        }
+    }
 }
