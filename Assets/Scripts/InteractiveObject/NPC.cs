@@ -13,10 +13,13 @@ public class NPC : InteractiveObject {
     // Use this for initialization
     public void Start()
     {
-		okay = 0;
+        m_textBox = FindObjectOfType<TextBoxManager>();
+        assosText = FindObjectOfType<AssociateTextNPC>();
+        okay = 0;
 		int type = Random.Range (1, 4);
 		dialogs = assosText.GenerateDial (type);
 		Debug.Log (type);
+
     }
 
     void SetNPC(string[] dials, bool rev)
@@ -64,11 +67,24 @@ public class NPC : InteractiveObject {
 
 	}
 
-	void OnTriggerStay2D(Collider2D other) {
-		Debug.Log (m_textBox.choix);
-		if (m_textBox.choix) {
-			GetComponent<Renderer> ().gameObject.SetActive(false);
-			m_textBox.choix = false;
-		}
-	}
+    void OnTriggerStay2D(Collider2D other)
+    {
+        Debug.Log(m_textBox.choix);
+        if (m_textBox.choix)
+        {
+            GetComponent<Renderer>().gameObject.SetActive(false);
+            m_textBox.choix = false;
+        }
+    }
+
+    public void setTextBox(TextBoxManager txtBox)
+    {
+        this.m_textBox = txtBox;
+    }
+
+    public void setAssocTxt(AssociateTextNPC assosTxt)
+    {
+        this.assosText = assosTxt;
+    }
+
 }
