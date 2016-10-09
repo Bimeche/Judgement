@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float radius;
     private Vector2 pos;
 	public bool canMove = true;
+	int goodness;
 
     private Rigidbody2D rb;
 
@@ -16,7 +17,8 @@ public class PlayerController : MonoBehaviour
     private bool collide = false;
     
     void Start()
-    {
+    {	
+		goodness = 0;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         cam = FindObjectOfType<Camera>();
@@ -137,6 +139,13 @@ public class PlayerController : MonoBehaviour
     {
         collide = false;
     }
+	public void setGood(int good){
+		goodness += good;
+		Debug.Log (goodness);
+	}
+	public int getGood(){
+		return goodness;
+	}
     // void Interact()
     // {
     //     pos = transform.position;

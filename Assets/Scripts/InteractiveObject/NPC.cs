@@ -9,14 +9,17 @@ public class NPC : InteractiveObject {
     public bool reveal;
 	public int okay;
 	public AssociateTextNPC assosText;
+	int type;
+	public PlayerController player;
 
     // Use this for initialization
     public void Start()
     {
         m_textBox = FindObjectOfType<TextBoxManager>();
         assosText = FindObjectOfType<AssociateTextNPC>();
+		player = FindObjectOfType<PlayerController>();
         okay = 0;
-		int type = Random.Range (1, 4);
+		type= Random.Range (1, 4);
 		dialogs = assosText.GenerateDial (type);
 		Debug.Log (type);
 
@@ -74,6 +77,14 @@ public class NPC : InteractiveObject {
         {
             GetComponent<Renderer>().gameObject.SetActive(false);
             m_textBox.choix = false;
+			if (type == 1)
+				player.setGood (10);
+			if (type==2)
+				player.setGood (5);
+			if (type==3)
+				player.setGood (-10);
+			if (type==4)
+				player.setGood (-5);
         }
     }
 
