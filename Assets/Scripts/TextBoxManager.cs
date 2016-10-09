@@ -18,10 +18,10 @@ public class TextBoxManager : MonoBehaviour {
 	public bool choix;
 
 	public PlayerController player;
-	// Use this for initialization
 
 
-	void Start () {
+    // Use this for initialization
+    void Start () {
 	
 		player = FindObjectOfType<PlayerController> ();
 
@@ -37,7 +37,7 @@ public class TextBoxManager : MonoBehaviour {
 			stopMoving = true;
 			enableBox ();
 		} else {
-			disableBox ();
+			disableBox (1);
 		}
 	}
 
@@ -89,10 +89,8 @@ public class TextBoxManager : MonoBehaviour {
 
 		if (currentLine > endAtLine) 
 		{
-			disableBox ();
+			disableBox (0);
 		}
-
-	
 	}
 
 	public void enableBox()
@@ -106,7 +104,7 @@ public class TextBoxManager : MonoBehaviour {
 		//}
 	}
 
-	public void disableBox()
+	public void disableBox( int init)
 	{
 		textBox.SetActive (false);
 		active = false;
@@ -117,7 +115,10 @@ public class TextBoxManager : MonoBehaviour {
 			//Destroy (textBox);
 		Debug.Log (choix);	
 		stopMoving = false;
-		player.canMove = true;
+        if (init != 1)
+        {
+            player.canMove = true;
+        }
 	}
 
 
