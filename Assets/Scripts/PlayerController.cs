@@ -7,8 +7,9 @@ public class PlayerController : MonoBehaviour
     public float radius;
     private Vector2 pos;
 	public bool canMove = true;
-	int goodness;
-    int nbPassenger;
+	private int goodness;
+    private int nbPassenger;
+    private int nbTalk;
 
     private Rigidbody2D rb;
 
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {	
 		goodness = 0;
+        nbTalk = 0;
         nbPassenger = 0;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -34,9 +36,6 @@ public class PlayerController : MonoBehaviour
         }
         Movement();
         NoRotate();
-        //if (Input.GetKey(KeyCode.Space){
-        //	Interact();
-        //}
         cam.transform.position = this.transform.position + new Vector3(0, 0, -10f);
     }
 
@@ -48,18 +47,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("inputLeft", false);
             anim.SetBool("inputDown", false);
             anim.SetBool("inputUp", true);
-            //Changer sprite
-            /*if (!collide)
-            {
-                transform.Translate(Vector2.up * speed * Time.deltaTime);
-            } else
-            {
-                transform.Translate(Vector2.down * speed * Time.deltaTime);
-            }*/
             transform.Translate(Vector2.up * speed * Time.deltaTime);
-            //rb.AddForce(Vector2.up * speed * Time.deltaTime);
-            //rb.MovePosition(Vector2.up * speed * Time.deltaTime);
-
         }
             else if (Input.GetKey(KeyCode.DownArrow))
 		{
@@ -67,17 +55,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("inputLeft", false);
             anim.SetBool("inputUp", false);
             anim.SetBool("inputDown", true);
-            //Changer sprite
-            /*if (!collide)
-            {
-                transform.Translate(Vector2.down * speed * Time.deltaTime);
-            }
-            else
-            {
-                transform.Translate(Vector2.up * speed * Time.deltaTime);
-            }*/
             transform.Translate(Vector2.down * speed * Time.deltaTime);
-            //rb.AddForce(Vector2.down * speed * Time.deltaTime);
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
 		{
@@ -85,17 +63,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("inputDown", false);
             anim.SetBool("inputUp", false);
             anim.SetBool("inputLeft", true);
-            //Changer sprite
-            /*if (!collide)
-            {
-                transform.Translate(Vector2.left * speed * Time.deltaTime);
-            }
-            else
-            {
-                transform.Translate(Vector2.right * speed * Time.deltaTime);
-            }*/
             transform.Translate(Vector2.left * speed * Time.deltaTime);
-            //rb.AddForce(Vector2.left * speed * Time.deltaTime);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
 		{
@@ -103,17 +71,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("inputDown", false);
             anim.SetBool("inputUp", false);
             anim.SetBool("inputRight", true);
-            //Changer sprite
-            /*if (!collide)
-            {
-                transform.Translate(Vector2.right * speed * Time.deltaTime);
-            }
-            else
-            {
-                transform.Translate(Vector2.left * speed * Time.deltaTime);
-            }*/
             transform.Translate(Vector2.right * speed * Time.deltaTime);
-            //rb.AddForce(Vector2.right* speed * Time.deltaTime);
         } else
         {
             anim.SetBool("inputRight", false);
@@ -151,5 +109,14 @@ public class PlayerController : MonoBehaviour
     public int getPassenger()
     {
         return nbPassenger;
+    }
+
+    public void addTalk()
+    {
+        nbTalk++;
+    }
+    public int getTalk()
+    {
+        return nbTalk;
     }
 }

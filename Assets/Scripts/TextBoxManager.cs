@@ -57,9 +57,10 @@ public class TextBoxManager : MonoBehaviour {
 		{
 			endAtLine = textLines.Length - 1;
 		}
+        currentLine = 0;
 
 		enableBox ();
-		
+        
 	}
 
 
@@ -77,17 +78,19 @@ public class TextBoxManager : MonoBehaviour {
 			if (currentLine < 3) {
 				currentLine++;
 			}
-		} else if (Input.GetKeyDown (KeyCode.N) && currentLine == 3) 
+		}
+        if (Input.GetKeyDown (KeyCode.N) && currentLine >= 3) 
 		{
-			choix = false;
+            FindObjectOfType<PlayerController>().addTalk();
+            choix = false;
 			currentLine++;
-		} else if (Input.GetKeyDown (KeyCode.O) && currentLine == 3) 
+		} else if (Input.GetKeyDown (KeyCode.O) && currentLine >= 3) 
 		{
 			choix = true;
 			currentLine++;
 		}
 
-		if (currentLine > endAtLine) 
+		if (currentLine > 3) 
 		{
 			disableBox (0);
 		}
@@ -108,19 +111,18 @@ public class TextBoxManager : MonoBehaviour {
 	{
 		textBox.SetActive (false);
 		active = false;
-		Debug.Log("hfeuerverfhkerjbfhjbfhkvberhjkfbeskjhfbskjhfbkjhdsrvbfhkjdrs bfhkjersbvfhkjversbfjhkbsdkrjgfvbshkjebfhkjebfrkuebfrhkjverbkuyhb");
 		currentLine = 0;
 		var = true;
-		//if(playerCame)
-			//Destroy (textBox);
-		Debug.Log (choix);	
 		stopMoving = false;
         if (init != 1)
         {
             player.canMove = true;
         }
 	}
-
+    public void setCurentLine()
+    {
+        currentLine = 0;
+    }
 
 
 }

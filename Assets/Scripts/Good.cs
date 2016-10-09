@@ -16,11 +16,17 @@ public class Good : MonoBehaviour {
 	void Start() 
 	{
 		sR = GetComponent<SpriteRenderer>();
-
-	}
+    }
 	// Update is called once per frame
 	void Update () {
-		if (timer > 0)
+
+
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit(); // Quits the game
+        }
+
+        if (timer > 0)
 		{
 			timer -= Time.deltaTime; // I need timer which from a particular time goes to zero
 		}
@@ -28,8 +34,7 @@ public class Good : MonoBehaviour {
 		if (timer <= 6)
 		{
 			sR.sprite = neutre;
-
-		} 
+        } 
 		if (timer <= 5)
 		{
 			sR.sprite = main1;

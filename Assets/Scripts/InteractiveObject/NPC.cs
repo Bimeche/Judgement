@@ -53,15 +53,19 @@ public class NPC : InteractiveObject {
 		{
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
+                m_textBox.setCurentLine();
 				m_textBox.ImportDialog(dialogs,true);
 				okay = 2;
+               
 			}
 		}
         
         if (m_textBox.choix)
         {
-            Debug.Log(currentTarget);
-            currentTarget.SetActive(false);
+            //currentTarget.SetActive(false);
+            currentTarget.GetComponent<BoxCollider2D>().enabled = false;
+            currentTarget.GetComponent<Renderer>().enabled=false;
+           
             m_textBox.choix = false;
             if (type == 1)
                 player.setGood(10);
@@ -71,12 +75,16 @@ public class NPC : InteractiveObject {
                 player.setGood(-10);
             if (type == 4)
                 player.setGood(-5);
+
+            player.addTalk();
         }
+
 
     }
 
     public override void Interact()
     {
+        
     }
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -84,14 +92,22 @@ public class NPC : InteractiveObject {
 		if(okay !=2)
 			okay = 1;
         currentTarget = this.gameObject;
-        Debug.Log(currentTarget);
+        Debug.Log("Enter: " + currentTarget);
         //currentTarget = GetComponent<Renderer>().gameObject;
 
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    
+
+    void OnTriggerExit2D(Collider2D other)
     {
-       
+       if (okay != 2)
+        {
+            Debug.Log("Exit!");
+            okay = 0;
+        }
+        currentTarget = null;
+        m_textBox.setCurentLine();
     }
 
     public void setTextBox(TextBoxManager txtBox)
