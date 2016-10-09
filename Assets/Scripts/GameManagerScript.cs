@@ -17,24 +17,23 @@ public class GameManagerScript : MonoBehaviour {
     public GameObject assocText;
     public Text timeText;
 
-    public double minuteLeft = 5;
-    public double secondLeft = 0;
-    public double msecondLeft = 0;
+    public double minuteLeft;
+    public double secondLeft;
+    public double msecondLeft;
+
+    private int TotalPlace;
+    public Text placeText;
 
     private Transform instanceHero;
 
 	// Use this for initialization
 	void Start () {
         mg.MapSetup();
-       /* instanceHero = UnityEngine.Object.Instantiate(hero, new Vector3(450, 50, 0f), Quaternion.identity) as Transform;
-        UnityEngine.Object.Instantiate(assocText);
-        pnjs = new NPC[3];
-        /*for (int i = 0; i < 3; i++)
-         {
-            Debug.Log("I: " + i);
-            pnjs[i] = UnityEngine.Object.Instantiate(pnj, new Vector3(i*50, 50, 0f), Quaternion.identity) as NPC;
-         }*/
-    }
+        minuteLeft = 0;
+        secondLeft = 20;
+        msecondLeft = 0;
+        TotalPlace = 2;
+}
 
     void Awake()
     {
@@ -43,35 +42,45 @@ public class GameManagerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (msecondLeft <= 0)
+        if (FindObjectOfType<PlayerController>().getPassenger() >= TotalPlace)
         {
-            if (secondLeft <= 0)
+            GameOver();
+        }
+        else
+        {
+            placeText.text = "Nb Place: " + FindObjectOfType<PlayerController>().getPassenger().ToString() + "/" + TotalPlace.ToString();
+
+            if (msecondLeft <= 0)
             {
-                if (minuteLeft <= 0)
+                if (secondLeft <= 0)
                 {
-                    GameOver();
+                    if (minuteLeft <= 0)
+                    {
+                        GameOver();
+                    }
+                    else
+                    {
+                        msecondLeft = 59;
+                        secondLeft = 59;
+                        minuteLeft -= 1;
+                    }
                 }
                 else
                 {
                     msecondLeft = 59;
-                    secondLeft = 59;
-                    minuteLeft -= 1;
+                    secondLeft -= 1;
                 }
+            }
+            else if (msecondLeft < 10)
+            {
+                msecondLeft -= 1;
+                timeText.text = "Temps restant: " + minuteLeft + ":" + secondLeft + ":0" + msecondLeft;
             }
             else
             {
-                msecondLeft = 59;
-                secondLeft -= 1;
+                msecondLeft -= 1;
+                timeText.text = "Temps restant: " + minuteLeft + ":" + secondLeft + ":" + msecondLeft;
             }
-        }else if(msecondLeft < 10)
-        {
-            msecondLeft -= 1;
-            timeText.text = "Temps restant: " + minuteLeft + ":" + secondLeft + ":0" + msecondLeft;
-        }
-        else
-        {
-            msecondLeft -= 1;
-            timeText.text = "Temps restant: " + minuteLeft + ":" + secondLeft + ":" + msecondLeft;
         }
     }
 
