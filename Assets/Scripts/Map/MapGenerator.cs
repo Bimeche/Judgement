@@ -7,7 +7,7 @@ public class MapGenerator : MonoBehaviour {
     private Transform MapHolder;
     public GameObject[] tiles;
 
-    void MapSetup()
+    public void MapSetup()
     {
         int num;
         bool[] usedtiles = new bool[9] { false, false, false, false, false, false, false, false, false };
@@ -32,7 +32,7 @@ public class MapGenerator : MonoBehaviour {
 
     void Awake()
     {
-        MapSetup();
+
     }
 
 }
