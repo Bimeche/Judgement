@@ -50,6 +50,7 @@ public class NPC : InteractiveObject {
 				okay = 2;
 			}
 		}
+			
 	}
 
     public override void Interact()
@@ -60,5 +61,14 @@ public class NPC : InteractiveObject {
 	{
 		if(okay !=2)
 			okay = 1;
+
+	}
+
+	void OnTriggerStay2D(Collider2D other) {
+		Debug.Log (m_textBox.choix);
+		if (m_textBox.choix) {
+			GetComponent<Renderer> ().gameObject.SetActive(false);
+			m_textBox.choix = false;
+		}
 	}
 }
